@@ -23,6 +23,12 @@
 * Moguænost saznanja udaljenosti od trenutnog mjesta do te lokacije
 * Moguænost saznanja vremena potrebnog do dolaska na željenu lokaciju
 
+### *_Akteri_*
+
+####
+1. Korisnik - je osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakseg kretanja gradom
+2. Administrator - je osoba zadužena za održavanje i nadogradnju sistema
+
 ##### Èlanovi tima:
 * Haris Dajic
 * Maida Karamujic
