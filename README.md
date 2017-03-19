@@ -4,17 +4,17 @@
 * Haris Dajiæ
 * Maida Karamujiæ
 
-# *_Sarajevo Blind Guide_*
+## *_Sarajevo Blind Guide_*
 
-### *_Opis teme_*
+### **Opis teme:**
 
 #### Aplikacija predstavlja turistièki vodiè sa navigacijom grada Sarajeva za slabovidne osobe. Svrha sistema je pomoæi korisnicima sa poremeæajem vidnog sistema da se lakše kreæu do željene lokacije unutar grada. Uz ovaj sistem korisnik æe se moæi kretati slobodnije i u veæini sluèajeva bez potrebe druge vrste pomoæi. 	
 
-### *_Procesi_*
+### **Procesi:**
 
 #### Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokacije na jednom od ponuðenih jezika. Uz pomoæ glasovnih instrukcija korisnik se kreæe prema željenom odredištu. Takoðer, u svakom trenutku korisnik ima moguænost da sazna trenutnu lokaciju, a u sluèaju potrebe moguænost hitnog poziva za pomoæ (policije, hitne pomoæi,vatrogasaca i informacionog centara).
 
-### *_Funkcionalnosti_*
+### **Funkcionalnosti:**
 
 #### 
 * Moguænost odabira jezika
@@ -27,7 +27,7 @@
 * Moguænost saznanja udaljenosti od trenutnog mjesta do odredišta
 * Moguænost saznanja vremena potrebnog do dolaska na željenu lokaciju
 
-### *_Akteri_*
+### **Akteri:**
 
 ####
 1. Korisnik - osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakšeg kretanja gradom
