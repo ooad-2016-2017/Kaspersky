@@ -13,15 +13,15 @@
 ### *_Funkcionalnosti_*
 
 #### 
-     * Moguænost odabira jezika
-     * Moguænost odabira jedne od ponuðenih lokacija
-     * Moguænost unosa nove rute od strane korisnika
-     * Moguænost odabira opisa odabrane lokacije na odabranom jeziku
-     * Po potrebi moguænost hitnih poziva
-     * Moguænost saznanja trenutne lokacije u svakom tenutku
-     * Moguænost kretanja uz glasovne instrukcije
-     * Moguænost saznanja udaljenosti od trenutnog mjesta do te lokacije
-     * Moguænost saznanja vremena potrebnog do dolaska na željenu lokaciju
+* Moguænost odabira jezika
+* Moguænost odabira jedne od ponuðenih lokacija
+* Moguænost unosa nove rute od strane korisnika
+* Moguænost odabira opisa odabrane lokacije na odabranom jeziku
+* Po potrebi moguænost hitnih poziva
+* Moguænost saznanja trenutne lokacije u svakom tenutku
+* Moguænost kretanja uz glasovne instrukcije
+* Moguænost saznanja udaljenosti od trenutnog mjesta do te lokacije
+* Moguænost saznanja vremena potrebnog do dolaska na željenu lokaciju
 
 ##### Èlanovi tima:
 * Haris Dajic
