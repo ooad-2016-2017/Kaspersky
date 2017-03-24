@@ -21,7 +21,7 @@ Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokac
 #### 
 * Moguænost odabira jezika
 * Moguænost odabira jedne od ponuðenih lokacija
-* Moguænost kreiranja nove rute od strane korisnika
+* Moguænost unosa proizvoljne rute strane korisnika
 * Moguænost opisa odabrane lokacije na odabranom jeziku
 * Po potrebi moguænost hitnih poziva
 * Moguænost saznanja trenutne lokacije u svakom tenutku
