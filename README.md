@@ -1,4 +1,6 @@
 # **Kaspersky**
+![alt text](http://image.flaticon.com/icons/png/512/8/8711.png)
+
 
 ### Èlanovi tima:
 * Haris Dajiæ
