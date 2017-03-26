@@ -1,5 +1,5 @@
 # **Kaspersky**
-![alt text](http://image.flaticon.com/icons/png/512/8/8711.png)
+![alt text](/logo_kon.png)
 
 
 ### Èlanovi tima:
