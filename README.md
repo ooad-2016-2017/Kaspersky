@@ -6,7 +6,7 @@
 * Haris Dajiæ
 * Maida Karamujiæ
 
-# *_Sarajevo Blind Guide_*
+# *Sarajevo Blind Guide*
 
 ### **Opis teme:**
 
@@ -16,7 +16,7 @@ Aplikacija predstavlja turistièki vodiè sa navigacijom grada Sarajeva za slabovi
 ### **Procesi:**
 
 #### 
-Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokacije na jednom od ponuðenih jezika. Uz pomoæ glasovnih instrukcija korisnik se kreæe prema željenom odredištu. Takoðer, u svakom trenutku korisnik ima moguænost da sazna trenutnu lokaciju, a u sluèaju potrebe moguænost hitnog poziva za pomoæ (policije, hitne pomoæi,vatrogasaca i informacionog centara).
+Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokacije na jednom od ponuðenih jezika. Uz pomoæ glasovnih instrukcija korisnik se kreæe prema željenom odredištu, dobijajuæi uz to obavještenje o poznatim lokacijama pored kojih u tom trenutku prolazi. Takoðer, u svakom trenutku korisnik ima moguænost da sazna trenutnu lokaciju, udaljenost do odredišta, a u sluèaju potrebe moguænost hitnog poziva za pomoæ (policije, hitne pomoæi,vatrogasaca).
 
 ### **Funkcionalnosti:**
 
@@ -30,9 +30,10 @@ Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokac
 * Moguænost kretanja uz glasovne instrukcije
 * Moguænost saznanja udaljenosti od trenutnog mjesta do odredišta
 * Moguænost saznanja vremena potrebnog do dolaska na željenu lokaciju
+* Obavještavanje o poznatim lokacijama pored kojih korisnik u tom trenutku prolazi
 
 ### **Akteri:**
 
 ####
-1. Korisnik - osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakšeg kretanja gradom
-2. Administrator - osoba zadužena za održavanje i nadogradnju sistema
+1. **Korisnik** - osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakšeg kretanja gradom
+2. **Administrator** - osoba zadužena za održavanje i nadogradnju sistema
