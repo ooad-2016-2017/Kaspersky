@@ -1,4 +1,4 @@
-# **KASPERSKY**
+# **Kaspersky**
 ![alt text](https://github.com/ooad-2016-2017/Kaspersky/blob/master/Logo_kon.jpg)
 
 
@@ -6,7 +6,7 @@
 * Haris Dajiæ
 * Maida Karamujiæ
 
-# *Sarajevo Blind Guide*
+# **Sarajevo Blind Guide**
 
 ### **Opis teme:**
 
@@ -35,5 +35,5 @@ Korisnik ima moguænost izbora željene lokacije te, po potrebi, kratak opis lokac
 ### **Akteri:**
 
 ####
-1. **Korisnik** - osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakšeg kretanja gradom
-2. **Administrator** - osoba zadužena za održavanje i nadogradnju sistema
+1. Korisnik - osoba koja ima moguænost korištenja sistema sa opisanim funkcionalnostima radi lakšeg kretanja gradom
+2. Administrator - osoba zadužena za održavanje i nadogradnju sistema
