@@ -1,4 +1,4 @@
-# **Kaspersky**
+# **KASPERSKY**
 ![alt text](https://github.com/ooad-2016-2017/Kaspersky/blob/master/Logo_kon.jpg)
 
 
