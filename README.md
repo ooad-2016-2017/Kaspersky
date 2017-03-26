@@ -1,5 +1,5 @@
 # **Kaspersky**
-![alt text](/logo_kon.png)
+![alt text](https://github.com/ooad-2016-2017/Kaspersky/blob/master/Logo_kon.jpg)
 
 
 ### Èlanovi tima:
