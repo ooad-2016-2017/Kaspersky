@@ -1,0 +1,62 @@
+Analiza SOLID principa na prethodno uraðenom dijagramu klase za Sarajevo Blind Guide
+
+
+1. Princip dobrog dizajna
+
+
+Princip dobrog dizajna glasi: KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU. 
+
+Naš dijagram klasa sastoji se od 6 klasa, odnosno 5 klasa (Korisnik, Poziv, Sistem,Administrator, Lokacija) i jednog interface-a (IUdaljenost). 
+
+Klasa Korisnik je klasa koja predstavlja raèun jednog korisnika sa njegovim korisnièkim imenom i šifrom koja je potrebna da bi se u sistemu zapamtila lista najèešæe 
+biranih lokacija za svakog korisnika aplikacije zasebno. Ona nudi saznanje ili promjenu korisnièkog imena ili šifre, te dodavanje nove lokacije u korisnikovu listu 
+lokacija. Jedina krhkost koju možemo primijetiti jeste da je klasa povezana sa klasom Lokacija, te promjena klase Lokacije može (iako najvjerovatnije da se to neæe
+desiti) zahtijevati promjenu i u ovoj klasi. Takoðer, promjena u bazi podataka u kojoj se nalaze korisnièka imena i šifre može uzrokovati promjene ove klase.
+
+Klasa Poziv zna naziv i broj hitnog poziva, nudi njihovo mijenjanje ili saznanje te poziv broja. Ona zadovoljava princip dobrog dizajna jer postoji samo jedan razlog
+za njenu promjenu.
+
+Klasa Lokacija nudi glasovne opise lokacije, saznanje udaljenosti od trenutne lokacije, imena lokacije, te pokretanje navigacije za odabranu lokaciju. I ona takoðer
+zadovoljava princip.
+
+Klasa Administrator ne zavisi niti od jedne druge klase pa i ona zadovoljava ovaj princip.
+
+Klasa Sistem nudi promjenu jezika, saznanje trenutne lokacije, hitni poziv, saznanje liste jezika i poziva, odabir lokacije, saznanje trenutnog vremena i izlazak iz
+sistema. Ona narušava princip zbog klasa Lokacija i Poziv koje ova klasa u sebi sadrži te njihova eventualna promjena može utjecati na promjenu ove klase. 
+
+
+2. Otvoreno zatvoren princip 
+
+
+Otvoreno zatvoren princip glasi: ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE.
+
+
+
+3. Liskov princip zamjene
+
+
+
+Liskov princip zamjene glasi:PODTIPOVI MORAJU BITI ZAMJENJIVI NJIHOVIM OSNOVNIM TIPOVIMA.
+
+Liskov princip zamjene se krši svaki put kada pokušamo napraviti nelegalan poziv funkcije na izvedenoj klasi. Kako naš dijagram klasa nema apstraktnih i izvedenih
+klasa, naš dijagram ne narušava ovaj princip.
+
+
+
+4. Princip inverzije ovisnosti 
+
+Princip inverzije ovisnosti glasi:
+A. MODULI VISOKOG NIVOA NE BI TREBALI OVISITI OD MODULA NISKOG NIVOA. OBA BI TREBALO DA OVISE OD APSTRAKCIJA.
+B. MODULI NE BI TREBALI OVISITI OD DETALJA. DETALJI BI TREBALI BITI OVISNI OD APSTRAKCIJA.
+
+Sa UML taèke gledišta, ovaj princip je veoma lako provjeriti. Pratimo svaku strelicu na UML dijagramu i provjerite da li je cilj strelice interfejs ili jedna 
+apstraktna klasa. Ako nije, i ako je to konkretna klasa, onda je princip inverzije ovisnosti narušen, i sistem æe biti osjetljiv na promjene. 
+
+Princip nije narušen niti kod jedne klase dijagrama jer je cilj interfejs.
+
+
+5. Princip izoliranja interfejsa glasi: KLIJENTI NE TREBA DA OVISE O METODAMA KOJE NEÆE UPOTREBLJAVATI
+
+
+Dijagram klasa ne narušava ovaj princip.
+
