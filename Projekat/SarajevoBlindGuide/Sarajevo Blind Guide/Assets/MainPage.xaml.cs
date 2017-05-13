@@ -29,7 +29,7 @@ namespace Sarajevo_Blind_Guide
 
         private void hitniPozivBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+            Sarajevo_Blind_Guide.HitniPozivi.show();
 
         }
     }

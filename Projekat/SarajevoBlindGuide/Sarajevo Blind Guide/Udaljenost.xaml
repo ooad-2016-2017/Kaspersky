@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Sarajevo_Blind_Guide.Udaljenost"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sarajevo_Blind_Guide"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gray">
+        <Button x:Name="kilometrazaBtn" Content="KILOMETRAŽA" HorizontalAlignment="Stretch" Height="179" Margin="10,219,10,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black" FontSize="24"/>
+        <Button x:Name="vremenaskaBtn" Content="VREMENSKA UDALJENOST" HorizontalAlignment="Stretch" Height="179" Margin="10,403,10,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black" FontSize="24"/>
+        <Button x:Name="nazadUdaljenostBtn" HorizontalAlignment="Left" Height="120" Margin="10,10,0,0" VerticalAlignment="Top" Width="132" Background="Gray">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets\Less_Than-512.png"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Page>

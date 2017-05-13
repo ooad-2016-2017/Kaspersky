@@ -13,24 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Sarajevo_Blind_Guide
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Udaljenost : Page
     {
-        public MainPage()
+        public Udaljenost()
         {
             this.InitializeComponent();
-        }
-
-        private void hitniPozivBtn_Click(object sender, RoutedEventArgs e)
-        {
-           
-
         }
     }
 }

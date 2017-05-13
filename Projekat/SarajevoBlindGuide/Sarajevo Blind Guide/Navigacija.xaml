@@ -1,0 +1,19 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sarajevo_Blind_Guide"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="Sarajevo_Blind_Guide.Navigacija"
+    mc:Ignorable="d">
+
+    <Grid Background="Gray">
+
+        <Maps:MapControl Height="293" Margin="10,10,10,0" VerticalAlignment="Top" Width="340"/>
+        <Button x:Name="trenutnaLokacijaBtn" Content="TRENUTNA LOKACIJA" HorizontalAlignment="Left" Height="100" Margin="10,320,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
+        <Button x:Name="hitnaPomLokacijaBtn" Content="HITNA POMOĆ" HorizontalAlignment="Left" Height="100" Margin="10,425,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
+        <Button x:Name="udaljenostBtn" Content="UDALJENOST" HorizontalAlignment="Left" Height="100" Margin="10,530,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
+
+    </Grid>
+</Page>

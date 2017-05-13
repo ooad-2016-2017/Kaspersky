@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Sarajevo_Blind_Guide.ZahtjevAdminu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sarajevo_Blind_Guide"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gray">
+        <TextBox x:Name="textBox" Margin="10,142,10,242" TextWrapping="Wrap" Text="Poruka"/>
+        <Button x:Name="posaljiZahtjevBtn" Content="POŠALJI ZAHTJEV" HorizontalAlignment="Stretch" Height="145" Margin="10,0,10,58" VerticalAlignment="Bottom" Background="Orange" BorderBrush="Black" FontSize="22"/>
+        <Button x:Name="nazadZahtjevAdminuBtn" Height="90" Margin="10,10,0,0" VerticalAlignment="Top" Width="98" Background="Gray">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets\Less_Than-512.png"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="zvukZahtjevAdminu"  Height="90" Margin="0,10,10,0" VerticalAlignment="Top" Width="98" HorizontalAlignment="Right" Background="Gray">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets\volume-24-512.png"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Page>
