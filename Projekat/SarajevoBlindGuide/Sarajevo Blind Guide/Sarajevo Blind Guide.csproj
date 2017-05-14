@@ -95,26 +95,26 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\Navigacija.xaml.cs">
+    <Compile Include="View\Navigacija.xaml.cs">
       <DependentUpon>Navigacija.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\OdabirJezika.xaml.cs">
+    <Compile Include="View\OdabirJezika.xaml.cs">
       <DependentUpon>OdabirJezika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\Pozivi.xaml.cs">
+    <Compile Include="View\Pozivi.xaml.cs">
       <DependentUpon>Pozivi.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\Udaljenost.xaml.cs">
+    <Compile Include="View\Udaljenost.xaml.cs">
       <DependentUpon>Udaljenost.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\UnosLokacije.xaml.cs">
+    <Compile Include="View\UnosLokacije.xaml.cs">
       <DependentUpon>UnosLokacije.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\ZahtjevAdminu.xaml.cs">
+    <Compile Include="View\ZahtjevAdminu.xaml.cs">
       <DependentUpon>ZahtjevAdminu.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -141,38 +141,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="ViewModel\MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ViewModel\Navigacija.xaml">
+    <Page Include="View\Navigacija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\OdabirJezika.xaml">
+    <Page Include="View\OdabirJezika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\Pozivi.xaml">
+    <Page Include="View\Pozivi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\Udaljenost.xaml">
+    <Page Include="View\Udaljenost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\UnosLokacije.xaml">
+    <Page Include="View\UnosLokacije.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewModel\ZahtjevAdminu.xaml">
+    <Page Include="View\ZahtjevAdminu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="View\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
