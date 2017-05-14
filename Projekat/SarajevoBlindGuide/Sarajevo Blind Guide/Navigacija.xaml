@@ -4,16 +4,110 @@
     xmlns:local="using:Sarajevo_Blind_Guide"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" x:Name="page"
     x:Class="Sarajevo_Blind_Guide.Navigacija"
     mc:Ignorable="d">
 
-    <Grid Background="Gray">
+    <Grid x:Name="grid" Background="Gray">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Uređaji">
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="480"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.Setters>
+                        <Setter Target="page.(FrameworkElement.Width)" Value="740"/>
+                        <Setter Target="page.(FrameworkElement.Height)" Value="646.667"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,320,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,425,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Height)" Value="107"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,530,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="mapControl.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="trenutnaLokacijaBtn.(Control.FontSize)" Value="36"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(Control.FontSize)" Value="36"/>
+                        <Setter Target="udaljenostBtn.(Control.FontSize)" Value="36"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="768"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-693,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="mapControl.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Height)" Value="100"/>
+                        <Setter Target="udaljenostBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,530,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="udaljenostBtn.(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Value="1"/>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,320,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="hitnaPomLokacijaBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,425,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="trenutnaLokacijaBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="hitnaPomLokacijaBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="udaljenostBtn.(Control.FontSize)" Value="48"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="992"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
-        <Maps:MapControl Height="293" Margin="10,10,10,0" VerticalAlignment="Top" Width="340"/>
+        <Maps:MapControl x:Name="mapControl" Height="239" Margin="10,64,10,0" VerticalAlignment="Top" Width="340"/>
         <Button x:Name="trenutnaLokacijaBtn" Content="TRENUTNA LOKACIJA" HorizontalAlignment="Left" Height="100" Margin="10,320,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
         <Button x:Name="hitnaPomLokacijaBtn" Content="HITNA POMOĆ" HorizontalAlignment="Left" Height="100" Margin="10,425,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
-        <Button x:Name="udaljenostBtn" Content="UDALJENOST" HorizontalAlignment="Left" Height="100" Margin="10,530,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black"/>
+        <Button x:Name="udaljenostBtn" Content="UDALJENOST" HorizontalAlignment="Left" Height="100" Margin="10,530,0,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black" d:LayoutOverrides="LeftPosition, RightPosition" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="nazadNavigacijaBtn" Height="54" Margin="10,10,0,0" VerticalAlignment="Top" Width="62" Background="Gray">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Assets\Less_Than-512.png"/>
+            </StackPanel>
+
+        </Button>
 
     </Grid>
 </Page>

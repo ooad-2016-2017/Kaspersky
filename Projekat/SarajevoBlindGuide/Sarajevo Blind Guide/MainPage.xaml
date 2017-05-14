@@ -1,18 +1,98 @@
 ﻿<Page
-    x:Class="Sarajevo_Blind_Guide.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Sarajevo_Blind_Guide"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Foundation="using:Windows.Foundation" x:Name="page"
+    x:Class="Sarajevo_Blind_Guide.MainPage"
     mc:Ignorable="d" Background="#FFB0AE8E" BorderBrush="#FFB9B216">
 
-    <Grid Background="Gray">
-        <Button x:Name="trenutnaLokacijaBtn" Content="TRENUTNA LOKACIJA" HorizontalAlignment="Stretch" Margin="10,10,10,0" VerticalAlignment="Top" FontStretch="ExtraExpanded" Height="120" d:LayoutOverrides="Height" Background="Orange" BorderBrush="Black"/>
-        <Button x:Name="unosLokacijeBtn" Content="UNOS LOKACIJE" HorizontalAlignment="Stretch" Margin="10,134,10,387" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange"/>
-        <Button x:Name="hitniPozivBtn" Content="HITNI POZIV" HorizontalAlignment="Stretch" Margin="10,258,10,261" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange"/>
-        <Button x:Name="odabirJezikaBtn" Content="ODABIR JEZIKA" HorizontalAlignment="Stretch" Margin="10,382,10,134" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange"/>
-        <Button x:Name="izlazBtn" Content="IZLAZ" HorizontalAlignment="Stretch" Margin="10,506,10,10" VerticalAlignment="Bottom" Height="120" Background="Orange" BorderBrush="Black"/>
+    <Grid x:Name="grid" Background="Gray">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Uređaji">
+                <VisualState x:Name="Mobitel">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.Setters>
+                        <Setter Target="page.(FrameworkElement.Width)" Value="689.333"/>
+                        <Setter Target="page.(FrameworkElement.Height)" Value="477.333"/>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-130.667,-165.667</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="trenutnaLokacijaBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="unosLokacijeBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="hitniPozivBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="odabirJezikaBtn.(Control.FontSize)" Value="48"/>
+                        <Setter Target="izlazBtn.(Control.FontSize)" Value="48"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.Setters>
+                        <Setter Target="page.(FrameworkElement.Width)" Value="1644"/>
+                        <Setter Target="page.(FrameworkElement.Height)" Value="800"/>
+                        <Setter Target="unosLokacijeBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,10,555</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="trenutnaLokacijaBtn.(FrameworkElement.Height)" Value="170"/>
+                        <Setter Target="unosLokacijeBtn.(FrameworkElement.Height)" Value="170"/>
+                        <Setter Target="hitniPozivBtn.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="unosLokacijeBtn.(UIElement.RenderTransformOrigin)">
+                            <Setter.Value>
+                                <Foundation:Point>0.499,-0.194</Foundation:Point>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="hitniPozivBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,360,10,380</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="odabirJezikaBtn.(FrameworkElement.Height)" Value="170"/>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,0,-110</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="hitniPozivBtn.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="odabirJezikaBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,10,205</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="izlazBtn.(FrameworkElement.Height)" Value="170"/>
+                        <Setter Target="izlazBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,10,30</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="trenutnaLokacijaBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="unosLokacijeBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="hitniPozivBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="odabirJezikaBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="izlazBtn.(Control.FontSize)" Value="72"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="992"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Button x:Name="trenutnaLokacijaBtn" Content="TRENUTNA LOKACIJA" HorizontalAlignment="Stretch" Margin="10,10,10,0" VerticalAlignment="Top" FontStretch="ExtraExpanded" Height="120" Background="Orange" BorderBrush="Black"/>
+        <Button x:Name="unosLokacijeBtn" Content="UNOS LOKACIJE" HorizontalAlignment="Stretch" Margin="10,134,10,387" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange" d:LayoutOverrides="TopMargin, BottomMargin"/>
+        <Button x:Name="hitniPozivBtn" Content="HITNI POZIV" HorizontalAlignment="Stretch" Margin="10,258,10,261" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange" d:LayoutOverrides="TopMargin, BottomMargin, TopPosition, BottomPosition"/>
+        <Button x:Name="odabirJezikaBtn" Content="ODABIR JEZIKA" HorizontalAlignment="Stretch" Margin="10,382,10,134" VerticalAlignment="Bottom" Height="120" BorderBrush="Black" Background="Orange" d:LayoutOverrides="TopMargin, BottomMargin"/>
+        <Button x:Name="izlazBtn" Content="IZLAZ" HorizontalAlignment="Stretch" Margin="10,506,10,10" VerticalAlignment="Bottom" Height="120" Background="Orange" BorderBrush="Black" d:LayoutOverrides="TopMargin, BottomMargin"/>
 
     </Grid>
 </Page>

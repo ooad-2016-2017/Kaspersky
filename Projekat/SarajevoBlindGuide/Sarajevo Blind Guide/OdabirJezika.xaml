@@ -7,17 +7,157 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="Gray">
+    <Grid x:Name="grid" Background="Gray">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Uređaji">
+                <VisualState x:Name="Mobitel">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="480"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-646,10</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="potvrdaJezikBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="potvrdaJezikBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,490,10,10</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="bosanskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,128,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Width)" Value="473"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Height)" Value="115"/>
+                        <Setter Target="engleskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,242,0,269</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Width)" Value="376"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="arapskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Width)" Value="376"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,360,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Height)" Value="125"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Width)" Value="184"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,134,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Height)" Value="109"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.Width)" Value="184"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.Height)" Value="109"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.Width)" Value="184"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.Height)" Value="109"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="768"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-759,-43</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="potvrdaJezikBtn.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="potvrdaJezikBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,490,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="potvrdaJezikBtn.(FrameworkElement.Height)" Value="183"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,128,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,242,0,322</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,360,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="bosanskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Width)" Value="528"/>
+                        <Setter Target="bosanskiRadBtn.(FrameworkElement.Height)" Value="120"/>
+                        <Setter Target="engleskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Width)" Value="454"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="engleskiRadBtn.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="arapskiRadBtn.(Control.FontSize)" Value="72"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Width)" Value="361"/>
+                        <Setter Target="arapskiRadBtn.(FrameworkElement.Height)" Value="125"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Width)" Value="150"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Height)" Value="110"/>
+                        <Setter Target="bosanskiZvukBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,134,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.Width)" Value="150"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.Height)" Value="110"/>
+                        <Setter Target="engleskiZvukBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>261,248,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.Width)" Value="150"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.Height)" Value="110"/>
+                        <Setter Target="arapskiZvukBtn.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>260,366,10,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="992"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
         <Button x:Name="potvrdaJezikBtn" Content="POTVRDI" HorizontalAlignment="Stretch" Height="140" Margin="10,490,10,0" VerticalAlignment="Top" Width="340" Background="Orange" BorderBrush="Black" FontSize="36"/>
-        <RadioButton x:Name="bosanskiRadBtn" Content="Bosanski" HorizontalAlignment="Right" Height="71" Margin="0,128,100,0" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1"/>
-        <RadioButton x:Name="engleskiRadBtn" Content="Engleski" HorizontalAlignment="Right" Height="71" Margin="0,242,100,0" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1"/>
-        <RadioButton x:Name="arapskiRadBtn" Content="Arapski" HorizontalAlignment="Right" Height="71" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1" RenderTransformOrigin="0.488,2.221" Margin="0,360,100,0"/>
+        <RadioButton x:Name="bosanskiRadBtn" Content="Bosanski" HorizontalAlignment="Right" Height="71" Margin="0,128,100,0" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1" d:LayoutOverrides="LeftMargin, RightMargin"/>
+        <RadioButton x:Name="engleskiRadBtn" Content="Engleski" HorizontalAlignment="Right" Height="71" Margin="0,242,100,0" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1" d:LayoutOverrides="LeftMargin, RightMargin, TopPosition, BottomPosition"/>
+        <RadioButton x:Name="arapskiRadBtn" Content="Arapski" HorizontalAlignment="Right" Height="71" VerticalAlignment="Top" Width="250" FontSize="36" AutomationProperties.SizeOfSet="-1" RenderTransformOrigin="0.488,2.221" Margin="0,360,100,0" d:LayoutOverrides="LeftMargin, RightMargin"/>
         <Button x:Name="nazadJezikBtn" HorizontalAlignment="Left" Height="85" Margin="10,10,0,0" VerticalAlignment="Top" Width="102" Background="Gray">
             <StackPanel Orientation="Horizontal">
                 <Image Source="Assets\Less_Than-512.png"/>
             </StackPanel>
         </Button>
-        <Button x:Name="bosanskiZvukBtn" HorizontalAlignment="Left" Height="65" Margin="260,134,0,0" VerticalAlignment="Top" Width="90" Background="Gray">
+        <Button x:Name="bosanskiZvukBtn" HorizontalAlignment="Left" Height="65" Margin="260,134,0,0" VerticalAlignment="Top" Width="90" Background="Gray" d:LayoutOverrides="LeftMargin, RightMargin">
             <StackPanel Orientation="Horizontal">
                 <Image Source="Assets\volume-24-512.png"/>
             </StackPanel>
